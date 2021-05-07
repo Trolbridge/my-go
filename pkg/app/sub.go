@@ -27,5 +27,8 @@ func Listen() rune {
 		}
 	}()
 
-	return in := bufio.NewReader(os.Stdin)
+	in := bufio.NewReader(os.Stdin)
+	r, _, err := in.ReadRune()
+	return r
+
 }
