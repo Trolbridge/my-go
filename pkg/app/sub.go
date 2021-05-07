@@ -14,7 +14,7 @@ func PrintLine() {
 }
 
 // fd 0 is stdin
-func Listen() rune {
+func Listen() {
 	state, err := terminal.MakeRaw(0)
 	fmt.Println("setting stdin to raw")
 	if err != nil {
@@ -28,5 +28,5 @@ func Listen() rune {
 	}()
 
 	in := bufio.NewReader(os.Stdin)
-	return in[0]
+	return in
 }
