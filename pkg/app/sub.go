@@ -33,7 +33,7 @@ func Listen() rune {
 	return r
 
 }
-func quit() {
+func Quit() {
 	state, err := terminal.MakeRaw(0)
 	fmt.Println("setting stdin to raw")
 	if err != nil {
