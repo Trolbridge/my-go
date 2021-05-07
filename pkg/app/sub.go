@@ -28,5 +28,5 @@ func Listen() rune {
 	}()
 
 	in := bufio.NewReader(os.Stdin)
-	return in
+	return in[0]
 }
