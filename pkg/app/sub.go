@@ -29,6 +29,13 @@ func Listen() rune {
 
 	in := bufio.NewReader(os.Stdin)
 	r, _, err := in.ReadRune()
+	if err != nil {
+		log.Println("stdin:", err)
+		if err := terminal.Restore(0, state); err != nil {
+			log.Println("warning, failed to restore terminal:", err)
+		}
+		os.Exit(1)
+	}
 	return r
 
 }
