@@ -14,7 +14,7 @@ func PrintLine() {
 }
 
 // fd 0 is stdin
-func Listen() {
+func Listen() rune {
 	state, err := terminal.MakeRaw(0)
 	fmt.Println("setting stdin to raw")
 	if err != nil {
@@ -28,15 +28,5 @@ func Listen() {
 	}()
 
 	in := bufio.NewReader(os.Stdin)
-	for {
-		r, _, err := in.ReadRune()
-		if err != nil {
-			log.Println("stdin:", err)
-			break
-		}
-		fmt.Printf("read rune %q\r\n", r)
-		if r == 'q' {
-			break
-		}
-	}
+	return in
 }
