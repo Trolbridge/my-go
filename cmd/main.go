@@ -13,6 +13,6 @@ func main() {
 
 	fmt.Printf("read rune %q\r\n", r)
 	if r == 'q' {
-		app.quit()
+		app.Quit()
 	}
 }
