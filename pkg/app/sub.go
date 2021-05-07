@@ -42,4 +42,5 @@ func Quit() {
 	if err := terminal.Restore(0, state); err != nil {
 		log.Println("warning, failed to restore terminal:", err)
 	}
+	os.Exit(1)
 }
