@@ -21,12 +21,6 @@ func Listen() rune {
 		log.Fatalln("setting stdin to raw:", err)
 	}
 
-	defer func() {
-		if err := terminal.Restore(0, state); err != nil {
-			log.Println("warning, failed to restore terminal:", err)
-		}
-	}()
-
 	in := bufio.NewReader(os.Stdin)
 	r, _, err := in.ReadRune()
 	if err != nil {
@@ -38,4 +32,14 @@ func Listen() rune {
 	}
 	return r
 
+}
+func quit() {
+	state, err := terminal.MakeRaw(0)
+	fmt.Println("setting stdin to raw")
+	if err != nil {
+		log.Fatalln("setting stdin to raw:", err)
+	}
+	if err := terminal.Restore(0, state); err != nil {
+		log.Println("warning, failed to restore terminal:", err)
+	}
 }
