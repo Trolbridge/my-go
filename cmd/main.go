@@ -2,14 +2,12 @@ package main
 
 import (
 	"fmt"
-	"my-go/pkg/app"
-	"os"
 )
 
 func main() {
-	var r rune
+	//	var r rune
 	fmt.Println("Welcome to My-Go")
-	for {
+	/*	for {
 		r = app.Listen()
 		if r == 'q' {
 			//			break
@@ -20,5 +18,5 @@ func main() {
 			app.Vari()
 		}
 
-	}
+	} */
 }
