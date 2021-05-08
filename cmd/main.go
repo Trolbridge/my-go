@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"my-go/pkg/app"
+	"os"
 )
 
 func main() {
@@ -11,10 +11,10 @@ func main() {
 	var r rune
 	for {
 		r = app.Listen()
-
-		fmt.Printf("read rune %q\r\n", r)
 		if r == 'q' {
-			app.Quit()
+			//			break
+			os.Exit(1)
 		}
+
 	}
 }
