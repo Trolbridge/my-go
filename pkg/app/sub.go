@@ -31,6 +31,7 @@ func Listen() rune {
 	fmt.Printf("read rune %q\r\n", r)
 	if r == 'q' {
 		//			break
+		os.Exit(1)
 	}
 	//	}
 	return r
