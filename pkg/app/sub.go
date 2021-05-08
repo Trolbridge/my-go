@@ -35,9 +35,6 @@ func Listen() rune {
 																																							}
 																										}
 																					}
-												}
-									}
-				}
 	return r
 
 }
