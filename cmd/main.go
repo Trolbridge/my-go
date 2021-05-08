@@ -7,6 +7,17 @@ import (
 func main() {
 	//	var r rune
 	fmt.Println("Welcome to My-Go")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
+	fmt.Println("1. Variables")
 	/*	for {
 		r = app.Listen()
 		if r == 'q' {
