@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
-	//	var r rune
+	var r rune
+	_ = r
 	fmt.Println("Welcome to My-Go")
 	fmt.Println("1. Variables")
 	fmt.Println("1. Variables")
