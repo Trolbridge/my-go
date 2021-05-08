@@ -14,11 +14,11 @@ func Listen() rune {
 	// fd 0 is stdin
 	state, err := terminal.MakeRaw(0)
 	if err != nil {
-		log.Fatalln("setting stdin to raw:", err)
+		log.Fatalln("Error: setting stdin to raw:", err)
 	}
 	defer func() {
 		if err := terminal.Restore(0, state); err != nil {
-			log.Println("warning, failed to restore terminal:", err)
+			log.Println("Error: failed to restore terminal:", err)
 		}
 	}()
 
