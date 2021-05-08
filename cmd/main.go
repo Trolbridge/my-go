@@ -17,7 +17,7 @@ func main() {
 		}
 		switch r {
 		case 1:
-			app.vari()
+			app.Vari()
 		}
 
 	}
