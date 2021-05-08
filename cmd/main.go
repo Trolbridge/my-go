@@ -1,14 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"my-go/pkg/app"
 	"os"
 )
 
 func main() {
-	//	fmt.Println("vim-go")
-	//	app.PrintLine()
 	var r rune
+	fmt.Println("Welcome to My-Go")
 	for {
 		r = app.Listen()
 		if r == 'q' {
