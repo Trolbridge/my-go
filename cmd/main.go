@@ -13,7 +13,7 @@ func main() {
 		r = app.Listen()
 		if r == 'q' {
 			//			break
-			os.Exit(1)
+			os.Exit(0)
 		}
 
 	}
