@@ -21,17 +21,18 @@ func Listen() rune {
 	//	}()
 
 	in := bufio.NewReader(os.Stdin)
-	for {
-		r, _, err := in.ReadRune()
-		if err != nil {
-			log.Println("stdin:", err)
-			break
-		}
-		fmt.Printf("read rune %q\r\n", r)
-		if r == 'q' {
-			break
-		}
+	//	for {
+	r, _, err := in.ReadRune()
+	if err != nil {
+		log.Println("stdin:", err)
+		//			break
+		os.Exit(1)
 	}
+	fmt.Printf("read rune %q\r\n", r)
+	if r == 'q' {
+		//			break
+	}
+	//	}
 	return r
 
 }
