@@ -15,6 +15,10 @@ func main() {
 			//			break
 			os.Exit(0)
 		}
+		switch r {
+		case 1:
+			app.vari()
+		}
 
 	}
 }
