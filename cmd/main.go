@@ -27,10 +27,9 @@ func main() {
 				os.Exit(0)
 			} */
 		switch r {
-		case 1:
-			//			app.Vari()
-			fmt.Println("Hi")
-		case 2:
+		case '1':
+			app.Vari()
+		case '2':
 			app.HelloWorld()
 		case 'q':
 			os.Exit(0)
