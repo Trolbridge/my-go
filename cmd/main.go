@@ -18,7 +18,6 @@ func main() {
 	fmt.Println("1. Variables")
 	fmt.Println("1. Variables")
 	fmt.Println("1. Variables")
-	fmt.Println("1. Variables")
 	/*	for {
 		r = app.Listen()
 		if r == 'q' {
