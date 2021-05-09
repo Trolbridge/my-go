@@ -23,15 +23,16 @@ func main() {
 	fmt.Println("1. Variables")
 	for {
 		r = app.Listen()
-		if r == 'q' {
-			//			break
-			os.Exit(0)
-		}
+		/*		if r == 'q' {
+				os.Exit(0)
+			} */
 		switch r {
 		case 1:
 			app.Vari()
 		case 2:
 			app.HelloWorld()
+		case 'q':
+			os.Exit(0)
 		}
 
 	}
