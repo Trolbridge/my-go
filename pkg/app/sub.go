@@ -35,3 +35,16 @@ func Listen() rune {
 	return r
 
 }
+func Vari(){
+	fmt.Println("Variables")
+}
+func HelloWorld() {
+fmt.Println("	package main")
+fmt.Println()
+	fmt.Println("import \"fmt\"")
+fmt.Println()
+	fmt.Println("func main() {")
+	fmt.Println("	    fmt.Println("hello world")
+	fmt.Println("	}")
+	fmt.Println("}")
+}
