@@ -28,7 +28,8 @@ func main() {
 			} */
 		switch r {
 		case 1:
-			app.Vari()
+			//			app.Vari()
+			fmt.Println("Hi")
 		case 2:
 			app.HelloWorld()
 		case 'q':
