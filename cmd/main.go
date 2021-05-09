@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"my-go/pkg/app"
+	"os"
 )
 
 func main() {
@@ -31,8 +32,8 @@ func main() {
 			fmt.Println("Hi")
 		case 2:
 			app.HelloWorld()
-			//		case 'q':
-			//			os.Exit(0)
+		case 'q':
+			os.Exit(0)
 		}
 
 	}
