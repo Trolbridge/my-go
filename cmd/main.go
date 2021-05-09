@@ -28,9 +28,9 @@ func main() {
 			} */
 		switch r {
 		case '1':
-			app.Vari()
-		case '2':
 			app.HelloWorld()
+		case '2':
+			app.Vari()
 		case 'q':
 			os.Exit(0)
 		}
