@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
+	"my-go/pkg/app"
+	"os"
 )
 
 func main() {
 	var r rune
 	_ = r
 	fmt.Println("Welcome to My-Go")
+	fmt.Println("1. Hello World")
 	fmt.Println("1. Variables")
 	fmt.Println("2. Println")
 	fmt.Println("1. Variables")
@@ -18,7 +21,7 @@ func main() {
 	fmt.Println("1. Variables")
 	fmt.Println("1. Variables")
 	fmt.Println("1. Variables")
-	/*	for {
+	for {
 		r = app.Listen()
 		if r == 'q' {
 			//			break
@@ -27,7 +30,9 @@ func main() {
 		switch r {
 		case 1:
 			app.Vari()
+		case 2:
+			app.HelloWorld()
 		}
 
-	} */
+	}
 }
